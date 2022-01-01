@@ -1,0 +1,12 @@
+@model AcountInfo
+<form action="/home/amaliatbardasht">
+    <label>مبلغ: </label>
+    <input type="number" name="m">
+    <button type="submit" class="btn btn-success me-3">برداشت</button>
+</form>
+@if (ViewBag.m != null)
+{
+    <p>
+        @ViewBag.m
+    </p>
+}
